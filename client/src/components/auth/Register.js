@@ -32,14 +32,14 @@ class Register extends Component {
           <div className="col s8 offset-s2">
             <Link to="/" className="btn-flat waves-effect">
               <i className="material-icons left">keyboard_backspace</i>
-              Back to home
+              Powrót do głównej
             </Link>
             <div className="col s12" style={{ paddingLeft: '11.250px' }}>
               <h4>
-                <b>Register</b> below
+                <b>Załóż konto</b>
               </h4>
               <p className="grey-text text-darken-1">
-                Already have an account? <Link to="/login">Log in</Link>
+                Posiadasz już konto? <Link to="/login">Zaloguj się</Link>
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
@@ -51,7 +51,7 @@ class Register extends Component {
                   id="name"
                   type="text"
                 />
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Imię</label>
               </div>
               <div className="input-field col s12">
                 <input
@@ -71,7 +71,7 @@ class Register extends Component {
                   id="password"
                   type="password"
                 />
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">Hasło</label>
               </div>
               <div className="input-field col s12">
                 <input
@@ -81,7 +81,7 @@ class Register extends Component {
                   id="password2"
                   type="password"
                 />
-                <label htmlFor="password2">Confirm Password</label>
+                <label htmlFor="password2">Potwierdź hasło</label>
               </div>
               <div className="col s12" style={{ paddingLeft: '11.250px' }}>
                 <button
@@ -94,7 +94,7 @@ class Register extends Component {
                   type="submit"
                   className="btn btn-large waves-effect waves-light hoverable blue accent-3"
                 >
-                  Sign up
+                  Zarejestruj
                 </button>
               </div>
             </form>
