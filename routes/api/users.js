@@ -28,6 +28,7 @@ router.post('/register', (req, res) => {
     }
     // If user is a new user, fill in the fields
     const newUser = new User({
+      id: req.body.id,
       name: req.body.name,
       email: req.body.email,
       password: req.body.password
