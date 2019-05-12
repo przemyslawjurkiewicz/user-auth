@@ -6,11 +6,11 @@ const Landing = () => (
         <div className="row">
             <div className="col s12 center-align">
                 <h4>
-                    <b>Gotowa</b> aplikacja do logowania i autoryzacji użytkownika.{" "}
+                    <b>Aplikacja</b> do logowania i autoryzacji użytkownika.{" "}
                 </h4>
                 <p className="flow-text grey-text text-darken-1">
-                    wykorzystuje Node, React, Redux, MongoDB do autoryzacji przez
-                    passport i JWTs
+                    Wykorzystuje <b>Node, React, Redux, MongoDB </b> do autoryzacji przez 
+                    <b> Passport JWTs </b>
             </p>
                 <br />
                 <Link to="/register" style={{ width: "150px", borderRadius: "3px", letterSpacing: "1.5px" }}
