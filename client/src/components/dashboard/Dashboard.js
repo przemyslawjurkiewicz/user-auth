@@ -7,6 +7,7 @@ class Dashboard extends Component {
   onLogoutClick = e => {
     e.preventDefault();
     this.props.logoutUser();
+    this.props.history.push('/');
   };
 
   render() {
@@ -18,7 +19,8 @@ class Dashboard extends Component {
             <h4>
               <b>Witaj</b> {user.name.split(' ')[0]}
               <p className="flow-text grey-text text-darken-1">
-                Zalogowałeś się do aplikacji przez <b>Passport, react+redux</b>, a dane zostały zapisane w bazie <b>MongoDB</b>.
+                Zalogowałeś się do aplikacji przez <b>Passport, React+Redux</b>,
+                a dane zostały zapisane w bazie <b>MongoDB</b>.
               </p>
             </h4>
             <button
