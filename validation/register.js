@@ -12,27 +12,27 @@ module.exports = function validateRegisterInput(data) {
 
   // Name checks
   if (Validator.isEmpty(data.name)) {
-    errors.name = 'Name field is required';
+    errors.name = 'Nazwa jest wymagana';
   }
 
   // Email checks
   if (Validator.isEmpty(data.email)) {
-    errors.email = 'Email field is required';
+    errors.email = 'Email jest wymagany';
   } else if (!Validator.isEmail(data.email)) {
-    errors.email = 'Email is invalid';
+    errors.email = 'Nieprawidłowy format email';
   }
   // Password checks
   if (Validator.isEmpty(data.password)) {
-    errors.password = 'Password field is required';
+    errors.password = 'Hasło jest wymagane';
   }
   if (Validator.isEmpty(data.password2)) {
-    errors.password2 = 'Confirm password field is required';
+    errors.password2 = 'Potwierdzenie hasła jest wymagane';
   }
   if (!Validator.isLength(data.password, { min: 6, max: 30 })) {
-    errors.password = 'Password must be at least 6 characters';
+    errors.password = 'Hasło musi mieć min. 6 znaków';
   }
   if (!Validator.equals(data.password, data.password2)) {
-    errors.password2 = 'Passwords must match';
+    errors.password2 = 'Hasła się nie zgadzają';
   }
   return {
     errors,
