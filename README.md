@@ -5,7 +5,7 @@ Pozwala użytkownikowi na:
 - logowanie
 - dostęp do chronionych stron dostępnych tylko dla zalogowanych użytkowników
 - pozostania zalogowanym po zamknięciu aplikacji lub odświeżeniu strony
-- wylogowaniu 
+- wylogowanie 
 
 ## Live: 
 https://user--auth.herokuapp.com/
@@ -13,7 +13,8 @@ https://user--auth.herokuapp.com/
 ## Inicjacja projektu:
 
 Po sklonowaniu projektu, zainstaluj wymagane paczki komendą `npm install`.
-Po zainstalowaniu paczek servera uruchom komendę `npm run client-install`
+
+Po zainstalowaniu uruchom komendę `npm run client-install`
 
 Teraz możesz zacząć pracę, korzystając `npm run dev`.
 
@@ -23,7 +24,7 @@ Dostępne są 4 główne skrypty przyspieszające pracę:
 - `start`: uruchamiający serwer
 - `client`: uruchamiający klienta
 - `server`:  odpala `nodemon`, obserwuje zmiany w kodzie severa
-- `dev`: uruchamiający za pomocą paczki <concurrently> serwer i klienta na różnych portach
+- `dev`: uruchamiający za pomocą paczki `concurrently` serwer i klienta na różnych portach
   
 ## Zależności:
 ### Strona serwera:
